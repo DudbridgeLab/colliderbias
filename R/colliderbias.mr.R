@@ -21,10 +21,10 @@
 
 #' @param xbeta Vector of effects on the exposure variable.
 #' @param xse Vector of standard errors of \code{xbeta}.
-#' @param ybeta Vector of effects on the outcome variable.
-#' @param yse Vector of standard errors of \code{ybeta}.
 #' @param dbeta Vector of effects on the selection variable.
 #' @param dse Vector of standard errors of \code{dbeta}.
+#' @param ybeta Vector of effects on the outcome variable.
+#' @param yse Vector of standard errors of \code{ybeta}.
 #' @param prune Vector containing indices of an approximately independent subset of the predictors in \code{xbeta},
 #' \code{ybeta} and \code{dbeta}. If unspecified, all predictors will be used.
 #' @param method Method for correcting weak instrument bias.
@@ -71,10 +71,10 @@
 #' @export
 colliderbias.mr = function(xbeta,
                            xse,
-                           ybeta,
-                           yse,
                            dbeta,
                            dse,
+                           ybeta,
+                           yse,
                            prune = NULL,
                            method = "CWBLS",
                            intercept = T,
