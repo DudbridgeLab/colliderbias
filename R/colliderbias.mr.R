@@ -170,7 +170,7 @@ colliderbias.mr = function(xbeta,
     b.raw.se = b.raw.se,
     b.raw.ci = b.raw.ci
   )
-  class(results) = "colliderbias.MR"
+  class(results) = "colliderbias.mr"
   results
 }
 
