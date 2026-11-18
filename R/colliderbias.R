@@ -150,9 +150,12 @@ colliderbias = function(xbeta,
   }
   
   # MR-RAPS adjustment for weak instruments
-  if(tolower(method) == "mr.raps"){
-    MRRAPS.results = mr.raps::mr.raps(xbeta.prune, ybeta.prune, xse.prune, yse.prune, 
-                                      over.dispersion = over.dispersion)
+  if (tolower(method) == "mr.raps"){
+    MRRAPS.results = mr.raps::mr.raps.shrinkage(xbeta.prune,
+                                                ybeta.prune,
+                                                xse.prune,
+                                                yse.prune,
+                                                over.dispersion = over.dispersion)
     b = MRRAPS.results$beta.hat
     b.se = MRRAPS.results$beta.se
   }
