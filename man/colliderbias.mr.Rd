@@ -7,10 +7,10 @@
 colliderbias.mr(
   xbeta,
   xse,
-  ybeta,
-  yse,
   dbeta,
   dse,
+  ybeta,
+  yse,
   prune = NULL,
   method = "CWBLS",
   intercept = T,
@@ -23,13 +23,13 @@ colliderbias.mr(
 
 \item{xse}{Vector of standard errors of \code{xbeta}.}
 
-\item{ybeta}{Vector of effects on the outcome variable.}
-
-\item{yse}{Vector of standard errors of \code{ybeta}.}
-
 \item{dbeta}{Vector of effects on the selection variable.}
 
 \item{dse}{Vector of standard errors of \code{dbeta}.}
+
+\item{ybeta}{Vector of effects on the outcome variable.}
+
+\item{yse}{Vector of standard errors of \code{ybeta}.}
 
 \item{prune}{Vector containing indices of an approximately independent subset of the predictors in \code{xbeta},
 \code{ybeta} and \code{dbeta}. If unspecified, all predictors will be used.}
